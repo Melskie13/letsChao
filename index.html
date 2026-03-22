@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Menu</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .menu-card {
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .menu-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .category-btn.active {
+            background-color: #0d6efd;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container py-4">
+
+    <h2 class="text-center mb-4">🍽️ Food Menu</h2>
+
+    <!-- Category Buttons -->
+    <div class="text-center mb-4">
+        <button class="btn btn-outline-primary category-btn active" data-category="all">All</button>
+        <button class="btn btn-outline-primary category-btn" data-category="friedrice">Fried Rice</button>
+        <button class="btn btn-outline-primary category-btn" data-category="milktea">Milktea</button>
+        <button class="btn btn-outline-primary category-btn" data-category="drinks">Refreshing Drinks</button>
+        <button class="btn btn-outline-primary category-btn" data-category="silog">Silog Meals</button>
+    </div>
+
+    <!-- Menu Items -->
+    <div class="row" id="menuContainer">
+
+        <!-- Fried Rice -->
+        <div class="col-md-3 mb-3 menu-item" data-category="friedrice">
+            <div class="card menu-card p-3">
+                <h5>Chicken Fried Rice</h5>
+                <p>₱120</p>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3 menu-item" data-category="friedrice">
+            <div class="card menu-card p-3">
+                <h5>Beef Fried Rice</h5>
+                <p>₱140</p>
+            </div>
+        </div>
+
+        <!-- Milktea -->
+        <div class="col-md-3 mb-3 menu-item" data-category="milktea">
+            <div class="card menu-card p-3">
+                <h5>Classic Milktea</h5>
+                <p>₱90</p>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3 menu-item" data-category="milktea">
+            <div class="card menu-card p-3">
+                <h5>Taro Milktea</h5>
+                <p>₱100</p>
+            </div>
+        </div>
+
+        <!-- Refreshing Drinks -->
+        <div class="col-md-3 mb-3 menu-item" data-category="drinks">
+            <div class="card menu-card p-3">
+                <h5>Lemon Iced Tea</h5>
+                <p>₱70</p>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3 menu-item" data-category="drinks">
+            <div class="card menu-card p-3">
+                <h5>Blue Lemonade</h5>
+                <p>₱80</p>
+            </div>
+        </div>
+
+        <!-- Silog Meals -->
+        <div class="col-md-3 mb-3 menu-item" data-category="silog">
+            <div class="card menu-card p-3">
+                <h5>Tapsilog</h5>
+                <p>₱120</p>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3 menu-item" data-category="silog">
+            <div class="card menu-card p-3">
+                <h5>Longsilog</h5>
+                <p>₱110</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- JS -->
+<script>
+    const buttons = document.querySelectorAll('.category-btn');
+    const items = document.querySelectorAll('.menu-item');
+
+    buttons.forEach(btn => {
+        btn.addEventListener('click', function () {
+
+            // Active button style
+            buttons.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+
+            const category = this.getAttribute('data-category');
+
+            items.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
