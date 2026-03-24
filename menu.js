@@ -1,28 +1,17 @@
 const menuList = [
     {
-        name: "Chicken Chao Fan",
-        price: 120,
-        category: "friedrice",
-        image: "images/fried-rice.jpg",
-        bestSeller: true,
-        flavors:""
+    name: "Pork Chao Fan Egg",
+    price: 54,
+    category: "friedrice",
+    image: "images/cf-egg.jpg",
+    bestSeller: false,
+    varieties: [
+        { name: "Regular", price: 54 },
+        { name: "Bagoong", price: 64 }
+    ],
+    flavors: ["Spicy", "Honey Garlic", "Parmesan"]
     },
-    {
-        name: "Pork Chao Fan",
-        price: 130,
-        category: "friedrice",
-        image: "images/fried-rice.jpg",
-        bestSeller: false,
-         flavors:""
-    },
-    {
-        name: "Iced Coffee",
-        price: 90,
-        category: "coffee",
-        image: "images/coffee.jpg",
-        bestSeller: true,
-        flavors:""
-    }
+    
 ];
 
 const addOns = [
