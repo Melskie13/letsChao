@@ -161,40 +161,25 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="menu.js"></script>
 <script>
-    const buttons = document.querySelectorAll('.category-btn');
-    const items = document.querySelectorAll('.menu-item');
+    $(document).ready(function () {
 
-    buttons.forEach(btn => {
-        btn.addEventListener('click', function () {
+    renderMenu(menuList);
 
-            buttons.forEach(b => b.classList.remove('active'));
-            this.classList.add('active');
+    // CATEGORY FILTER
+    $('.category-btn').on('click', function () {
+        $('.category-btn').removeClass('active');
+        $(this).addClass('active');
 
-            const category = this.getAttribute('data-category');
+        const category = $(this).data('category');
 
-            items.forEach(item => {
-                if (category === 'all' || item.getAttribute('data-category') === category) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        });
+        if (category === 'all') {
+            renderMenu(menuList);
+        } else {
+            const filtered = menuList.filter(x => x.category === category);
+            renderMenu(filtered);
+        }
     });
 
-    $('.category-btn').on('click', function () {
-
-    $('.category-btn').removeClass('active');
-    $(this).addClass('active');
-
-    var category = $(this).data('category');
-
-    if (category === 'all') {
-        $('.menu-item').show();
-    } else {
-        $('.menu-item').hide();
-        $('.menu-item[data-category="' + category + '"]').show();
-    }
 });
 
     function renderMenu(list) {
