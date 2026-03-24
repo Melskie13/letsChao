@@ -96,19 +96,15 @@ const menuList = [
 const addOns = [
     {
         name: "Chili Oil",
-        price: 10,
-        image: "images/chili-oil.jpg",
-        
+        price: 10,  
     },
     {
         name: "Extra Egg",
         price: 15,
-        image: "images/egg.jpg"
     },
     {
         name: "Garlic Topping",
         price: 12,
-        image: "images/garlic.jpg"
     }
     
 ];
