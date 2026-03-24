@@ -20,109 +20,20 @@
             font-weight: 600;
         }
 
-        /* Category Buttons */
-        .category-btn {
-            border-radius: 50px;
-            padding: 8px 18px;
-            transition: 0.3s;
-        }
-
-        .category-btn.active,
-        .category-btn:hover {
-            background: #0d6efd;
-            color: white;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
-
-        /* Card Styling */
-        .menu-card {
-            border: none;
-            border-radius: 20px;
-            overflow: hidden;
-            background: rgba(255,255,255,0.7);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-        }
-
-        .menu-card:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 12px 25px rgba(0,0,0,0.2);
-        }
-
-        /* Image */
-        .menu-card img {
-            height: 180px;
-            object-fit: cover;
-            transition: 0.4s;
-        }
-
-        .menu-card:hover img {
-            transform: scale(1.1);
-        }
-
-        /* Card Body */
-        .card-body h5 {
-            font-weight: 600;
-        }
-
-        .price {
-            color: #0d6efd;
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-
-        .sidebar {
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    overflow-y: auto;
-}
-
-.list-group-item {
-    border: none;
-    border-radius: 10px;
-    margin-bottom: 6px;
-    transition: 0.2s;
-}
-
-.list-group-item:hover {
-    background-color: #0d6efd;
-    color: #fff;
-}
-
-.list-group-item.active {
-    background-color: #0d6efd;
-    color: #fff;
-    font-weight: bold;
-}
-
-.card {
-    border-radius: 15px;
-    overflow: hidden;
-    transition: 0.2s;
-}
-
-.card:hover {
-    transform: scale(1.03);
-}
-
-.card img {
+        .card-img-top {
+    width: 100%;
     height: 180px;
     object-fit: cover;
 }
-        .best-seller-badge {
+
+.best-seller-badge {
     position: absolute;
     top: 10px;
     left: 10px;
-    font-size: 0.8rem;
-    padding: 5px 10px;
-    border-radius: 20px;
 }
-        .card-img-top {
-    width: 100%;
-    height: 200px;       /* control height */
-    object-fit: cover;   /* crop nicely */
+
+.card-body {
+    font-size: 0.9rem;
 }
     </style>
 </head>
@@ -188,23 +99,54 @@
 
     list.forEach(item => {
 
+        // VARIETIES DISPLAY
+        let varietyHtml = "";
+        if (item.varieties && item.varieties.length > 0) {
+
+            varietyHtml += `<div class="text-start small mb-2">
+                                <strong>Varieties:</strong><br>`;
+
+            item.varieties.forEach(v => {
+                varietyHtml += `• ${v.name} - ₱${v.price}<br>`;
+            });
+
+            varietyHtml += `</div>`;
+        }
+
+        // FLAVORS DISPLAY
+        let flavorHtml = "";
+        if (item.flavors && item.flavors.length > 0) {
+
+            flavorHtml += `<div class="text-start small mb-2">
+                                <strong>Flavors:</strong><br>`;
+
+            item.flavors.forEach(f => {
+                flavorHtml += `• ${f}<br>`;
+            });
+
+            flavorHtml += `</div>`;
+        }
+
         html += `
-        <div class="col-md-4 mb-4 menu-item">
+        <div class="col-md-4 mb-4">
             <div class="card shadow-sm position-relative">
 
                 ${item.bestSeller ? '<span class="badge bg-danger best-seller-badge">🔥 Best Seller</span>' : ''}
 
                 <img src="${item.image}" class="card-img-top">
 
-                <div class="card-body text-center">
+                <div class="card-body">
                     <h5>${item.name}</h5>
-                    <p class="text-info">₱${item.price}</p>
-                    <button class="btn btn-primary btn-sm">Add</button>
+                    <p class="text-info fw-bold">₱${item.price}</p>
+
+                    ${varietyHtml}
+                    ${flavorHtml}
+
+                    <button class="btn btn-primary w-100 btn-sm">Add</button>
                 </div>
             </div>
         </div>`;
     });
-
     $('#menu-items').html(html);
 }
 </script>
