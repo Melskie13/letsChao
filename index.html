@@ -71,71 +71,139 @@
             font-weight: bold;
             font-size: 1.1rem;
         }
+
+        .sidebar {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+}
+
+.list-group-item {
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 6px;
+    transition: 0.2s;
+}
+
+.list-group-item:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.list-group-item.active {
+    background-color: #0d6efd;
+    color: #fff;
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    height: 180px;
+    object-fit: cover;
+}
     </style>
 </head>
 
 <body>
 
-<div class="container py-5">
+<div class="container-fluid">
+    <div class="row">
 
-    <h2 class="text-center mb-4">🍽️ Modern Food Menu</h2>
+        <!-- Sidebar -->
+        <div class="col-md-3 col-lg-2 bg-light sidebar p-3">
+            <h5 class="mb-3">Menu</h5>
 
-    <!-- Category Buttons -->
-    <div class="text-center mb-4">
-        <button class="btn btn-outline-primary category-btn active" data-category="all">All</button>
-        <button class="btn btn-outline-primary category-btn" data-category="friedrice">Chao Fan</button>
-         <button class="btn btn-outline-primary category-btn" data-category="platters">Platters</button>
-        <button class="btn btn-outline-primary category-btn" data-category="yogurt">Frozen Yogurt</button>
-        <button class="btn btn-outline-primary category-btn" data-category="drinks">Fresh Drinks</button>
-        <button class="btn btn-outline-primary category-btn" data-category="icecream">Ice Cream</button>
-        <button class="btn btn-outline-primary category-btn" data-category="coffee">Ice Coffee</button>
-        <button class="btn btn-outline-primary category-btn" data-category="fruitea">Fruitea</button>
-        <button class="btn btn-outline-primary category-btn" data-category="milkbase">Milk Based</button>
-    </div>
-    <!-- Menu Items -->
-    <div class="row" id="menuContainer">
-
-        <!-- Fried Rice -->
-        <div class="col-md-3 mb-4 menu-item" data-category="friedrice">
-            <div class="card menu-card">
-                <img src="images/chicken-fried-rice.jpg" onerror="this.src='images/default.jpg'">
-                <div class="card-body text-center">
-                    <h5>Chicken Fried Rice</h5>
-                    <p class="price">₱120</p>
-                </div>
+            <div class="list-group">
+                <button class="list-group-item list-group-item-action active category-btn" data-category="all">All</button>
+                <button class="list-group-item list-group-item-action category-btn" data-category="friedrice">🍚 Chao Fan</button>
+                <button class="list-group-item list-group-item-action category-btn" data-category="platters">🍱 Platters</button>
+                <button class="list-group-item list-group-item-action category-btn" data-category="drinks">🥤 Fresh Drinks</button>
+                <button class="list-group-item list-group-item-action category-btn" data-category="icecream">🍨 Ice Cream</button>
+                <button class="list-group-item list-group-item-action category-btn" data-category="coffee">☕ Ice Coffee</button>
             </div>
         </div>
 
-        <!-- Milktea -->
-        <div class="col-md-3 mb-4 menu-item" data-category="milktea">
-            <div class="card menu-card">
-                <img src="images/milktea.jpg" onerror="this.src='images/default.jpg'">
-                <div class="card-body text-center">
-                    <h5>Classic Milktea</h5>
-                    <p class="price">₱90</p>
-                </div>
-            </div>
-        </div>
+        <!-- Menu Content -->
+        <div class="col-md-9 col-lg-10 p-4">
+            <div class="row" id="menu-items">
 
-        <!-- Drinks -->
-        <div class="col-md-3 mb-4 menu-item" data-category="drinks">
-            <div class="card menu-card">
-                <img src="images/lemonade.jpg" onerror="this.src='images/default.jpg'">
-                <div class="card-body text-center">
-                    <h5>Blue Lemonade</h5>
-                    <p class="price">₱80</p>
+                <!-- Item -->
+                <div class="col-md-4 mb-4 menu-item" data-category="friedrice">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Chicken Chao Fan</h5>
+                            <p class="text-muted">₱120</p>
+                            <button class="btn btn-primary btn-sm">Add</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
 
-        <!-- Silog -->
-        <div class="col-md-3 mb-4 menu-item" data-category="silog">
-            <div class="card menu-card">
-                <img src="images/tapsilog.jpg" onerror="this.src='images/default.jpg'">
-                <div class="card-body text-center">
-                    <h5>Tapsilog</h5>
-                    <p class="price">₱120</p>
+                <div class="col-md-4 mb-4 menu-item" data-category="friedrice">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Pork Chao Fan</h5>
+                            <p class="text-muted">₱130</p>
+                            <button class="btn btn-primary btn-sm">Add</button>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-md-4 mb-4 menu-item" data-category="platters">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Chicken Platter</h5>
+                            <p class="text-muted">₱180</p>
+                            <button class="btn btn-primary btn-sm">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 menu-item" data-category="drinks">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Lemon Juice</h5>
+                            <p class="text-muted">₱60</p>
+                            <button class="btn btn-primary btn-sm">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 menu-item" data-category="coffee">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Iced Coffee</h5>
+                            <p class="text-muted">₱90</p>
+                            <button class="btn btn-primary btn-sm">Add</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 menu-item" data-category="icecream">
+                    <div class="card shadow-sm">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5>Vanilla Ice Cream</h5>
+                            <p class="text-muted">₱70</p>
+                            <button class="btn btn-primary btn-sm">Add</button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -164,6 +232,21 @@
             });
         });
     });
+
+    $('.category-btn').on('click', function () {
+
+    $('.category-btn').removeClass('active');
+    $(this).addClass('active');
+
+    var category = $(this).data('category');
+
+    if (category === 'all') {
+        $('.menu-item').show();
+    } else {
+        $('.menu-item').hide();
+        $('.menu-item[data-category="' + category + '"]').show();
+    }
+});
 </script>
 
 </body>
