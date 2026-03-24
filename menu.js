@@ -12,7 +12,7 @@ const menuList = [
             { name: "Spicy", price: 5 },
             { name: "Honey Garlic", price: 10 },
             { name: "Parmesan", price: 15 }
-        ]
+        ],
     },
     {
         name: "Pork Chao Fan Chicken Wings",
@@ -27,7 +27,7 @@ const menuList = [
             { name: "Spicy", price: 5 },
             { name: "Honey Garlic", price: 10 },
             { name: "Parmesan", price: 15 }
-        ]
+        ],
     },
    
 ];
