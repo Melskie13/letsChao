@@ -8,11 +8,7 @@ const menuList = [
         varieties: [
             { name: "Bagoong Chao Fan", price: 64 }
         ],
-        flavors: [
-            { name: "Spicy", price: 5 },
-            { name: "Honey Garlic", price: 10 },
-            { name: "Parmesan", price: 15 }
-        ],
+        flavors: [],
     },
     {
         name: "Pork Chao Fan Chicken Wings",
