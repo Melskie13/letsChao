@@ -56,6 +56,16 @@
     height: 100px;
     object-fit: cover;
 }
+        .menu-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;          /* same size */
+    margin-bottom: 4px;
+}
+
+.menu-row span:last-child {
+    font-weight: 500;
+}
     </style>
 </head>
 
@@ -140,18 +150,25 @@ function renderMenu(list) {
 
         // VARIETIES DISPLAY
         let varietyHtml = "";
-        if (item.varieties && item.varieties.length > 0) {
-
-            varietyHtml += `<div class="text-start small mb-2">
-                                <strong>Varieties:</strong><br>`;
-
+        // MAIN ITEM
+        varietyHtml += `
+            <div class="menu-row fw-bold">
+                <span>${item.name}</span>
+                <span class="text-info">₱${item.price ?? ''}</span>
+            </div>
+        `;
+        
+        // VARIATIONS
+        if (item.varieties) {
             item.varieties.forEach(v => {
-                varietyHtml += `• ${v.name} - ₱${v.price}<br>`;
+                varietyHtml += `
+                    <div class="menu-row ps-3">
+                        <span>${v.name}</span>
+                        <span class="text-info">₱${v.price}</span>
+                    </div>
+                `;
             });
-
-            varietyHtml += `</div>`;
         }
-
         // FLAVORS DISPLAY
         let flavorHtml = "";
         if (item.flavors && item.flavors.length > 0) {
