@@ -33,7 +33,7 @@ const menuList = [
 ];
 
 const addOns = [
-{
+    {
         name: "Chili Oil",
         price: 10,
         image: "images/chili-oil.jpg",
