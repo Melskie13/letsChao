@@ -177,7 +177,7 @@ function renderMenu(list) {
                                 <strong>Flavors:</strong><br>`;
 
             item.flavors.forEach(f => {
-                flavorHtml += `• ${f.name} (+₱${f.price})<br>`;
+                flavorHtml += `• ${f.name} (+₱${f.price ?? ''})<br>`;
             });
 
             flavorHtml += `</div>`;
@@ -211,7 +211,7 @@ function renderAddOns(addOns) {
         <div class="card shadow-sm">
             <div class="card-body text-center p-2">
                 <h6 class="mb-1">${add.name}</h6>
-                <small class="text-success">+₱${add.price}</small>
+                <small class="text-success">+₱${add.price ?? ''}</small>
             </div>
         </div>`;
     });
