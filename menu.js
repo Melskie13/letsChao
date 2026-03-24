@@ -528,10 +528,10 @@ const menuList = [
         image: "images/cf-egg.jpg",
         bestSeller: false,
         varieties: [
-            { name: "4 pcs", price: 125 }
-            { name: "8 pcs", price: 250 }
-            { name: "16 pcs", price: 500 } 
-            { name: "32+ 2 pcs", price: 999 }
+            { name: "4 pcs", price: 125 },
+            { name: "8 pcs", price: 250 },
+            { name: "16 pcs", price: 500 } ,
+            { name: "32+ 2 pcs", price: 999 },
             { name: "64+ 4 pcs", price: 1899 }
         ],
         flavors: [
