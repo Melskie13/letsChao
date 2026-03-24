@@ -25,6 +25,71 @@ const menuList = [
             { name: "Parmesan", price: 15 }
         ],
     },
+    {
+        name: "Strawberry w/ Oreo Yogurt",
+        price: ,
+        category: "yogurt",
+        image: "images/yog-swo.jpg",
+        bestSeller: true,
+        varieties: [
+            { name: "Medium", price:69 },
+             { name: "Large", price:89 }
+        ],
+        flavors: [
+        ],
+    },
+    {
+        name: "Caramel and Graham Yogurt",
+        price: ,
+        category: "yogurt",
+        image: "images/yog-swo.jpg",
+        bestSeller: false,
+        varieties: [
+            { name: "Medium", price:69 },
+             { name: "Large", price:89 }
+        ],
+        flavors: [
+        ],
+    },
+    {
+        name: "Blueberry w/ Nata Yogurt",
+        price: ,
+        category: "yogurt",
+        image: "images/yog-swo.jpg",
+        bestSeller: false,
+        varieties: [
+            { name: "Medium", price:69 },
+             { name: "Large", price:89 }
+        ],
+        flavors: [
+        ],
+    },
+    {
+        name: "Caramel w/ Mallows Ice Cream",
+        price: ,
+        category: "icecream",
+        image: "images/ic-cjo.jpg",
+        bestSeller: false,
+        varieties: [
+            { name: "Medium", price:39 },
+             { name: "Large", price:49 }
+        ],
+        flavors: [
+        ],
+    },
+    {
+        name: "Coffee Jelly w/ Oreo Ice Cream",
+        price: ,
+        category: "icecream",
+        image: "images/ic-cjo.jpg",
+        bestSeller: false,
+        varieties: [
+            { name: "Medium", price:39 },
+             { name: "Large", price:49 }
+        ],
+        flavors: [
+        ],
+    },
    
 ];
 
