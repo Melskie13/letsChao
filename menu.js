@@ -465,8 +465,8 @@ const menuList = [
         image: "images/yog-swo.jpg",
         bestSeller: true,
         varieties: [
-            { name: "", price: },
-             { name: "", price: }
+            { name: "", price:null },
+             { name: "", price:null }
         ],
         flavors: [
         ],
@@ -478,8 +478,8 @@ const menuList = [
         image: "images/yog-swo.jpg",
         bestSeller: false,
         varieties: [
-            { name: "", price: },
-             { name: "", price: }
+            { name: "", price:null },
+             { name: "", price:null }
         ],
         flavors: [
         ],
@@ -517,7 +517,7 @@ const menuList = [
         image: "images/cf-egg.jpg",
         bestSeller: true,
         varieties: [
-            { name: "", price:  }
+            { name: "", price:null  }
         ],
         flavors: [],
     },
@@ -671,9 +671,9 @@ const menuList = [
             { name: "", price:  }
         ],
         Add Ons: [
-            { name: "", price:  },
-            { name: "", price:  },
-            { name: "", price:  }
+            { name: "", price:null  },
+            { name: "", price:null  },
+            { name: "", price:null  }
         ],
     },
     {
