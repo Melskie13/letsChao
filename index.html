@@ -102,7 +102,7 @@
         // SHOW ADDONS ONLY FOR FRIED RICE
         if (category === "friedrice") {
             $('#addons-section').show();
-            renderAddOns();
+            renderAddOns(addOns);
         } else {
             $('#addons-section').hide();
         }
@@ -165,7 +165,7 @@ function renderMenu(list) {
     $('#menu-items').html(html);
 }
 
-function renderAddOns() {
+function renderAddOns(addOns) {
 
     let html = "";
 
