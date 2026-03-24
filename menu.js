@@ -27,7 +27,7 @@ const menuList = [
     },
     {
         name: "Strawberry w/ Oreo Yogurt",
-        price: ,
+        price: 69,
         category: "yogurt",
         image: "images/yog-swo.jpg",
         bestSeller: true,
@@ -40,7 +40,7 @@ const menuList = [
     },
     {
         name: "Caramel and Graham Yogurt",
-        price: ,
+        price: 69,
         category: "yogurt",
         image: "images/yog-swo.jpg",
         bestSeller: false,
@@ -53,7 +53,7 @@ const menuList = [
     },
     {
         name: "Blueberry w/ Nata Yogurt",
-        price: ,
+        price: 69,
         category: "yogurt",
         image: "images/yog-swo.jpg",
         bestSeller: false,
@@ -66,7 +66,7 @@ const menuList = [
     },
     {
         name: "Caramel w/ Mallows Ice Cream",
-        price: ,
+        price: 39,
         category: "icecream",
         image: "images/ic-cjo.jpg",
         bestSeller: false,
@@ -79,7 +79,7 @@ const menuList = [
     },
     {
         name: "Coffee Jelly w/ Oreo Ice Cream",
-        price: ,
+        price:39 ,
         category: "icecream",
         image: "images/ic-cjo.jpg",
         bestSeller: false,
