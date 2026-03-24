@@ -20,7 +20,9 @@ const menuList = [
             { name: "Bagoong Chaofan Wings", price:115 }
         ],
         flavors: [
-            { name: "Salted Egg, Teriyaki, Soy garlic, Buffalo, BBQ", price: 5 },
+            { name: "Buffalo, BBQ", price: 5 },
+            { name: "Soy garlic", price: 5 },
+            { name: "Buffalo, BBQ", price: 5 },
             { name: "Cheesy Wings", price: 15 },
             { name: "Garlic Parmesan", price: 15 }
         ],
