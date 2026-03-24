@@ -471,7 +471,7 @@ const menuList = [
         flavors: [
         ],
     },
-    
+    {
         name: "Strawberry Puree with Lemonade",
         price: 80,
         category: "Fresh Drink",
