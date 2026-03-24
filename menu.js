@@ -35,5 +35,15 @@ const addOns = [
         image: "images/chili-oil.jpg",
         
     },
+    {
+        name: "Extra Egg",
+        price: 15,
+        image: "images/egg.jpg"
+    },
+    {
+        name: "Garlic Topping",
+        price: 12,
+        image: "images/garlic.jpg"
+    }
     
 ];
