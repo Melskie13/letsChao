@@ -465,8 +465,6 @@ const menuList = [
         image: "images/yog-swo.jpg",
         bestSeller: true,
         varieties: [
-            { name: "", price:null },
-             { name: "", price:null }
         ],
         flavors: [
         ],
@@ -478,8 +476,7 @@ const menuList = [
         image: "images/yog-swo.jpg",
         bestSeller: false,
         varieties: [
-            { name: "", price:null },
-             { name: "", price:null }
+            
         ],
         flavors: [
         ],
@@ -517,7 +514,7 @@ const menuList = [
         image: "images/cf-egg.jpg",
         bestSeller: true,
         varieties: [
-            { name: "", price:null  }
+      
         ],
         flavors: [],
     },
@@ -547,9 +544,9 @@ const menuList = [
         image: "images/cf-egg.jpg",
         bestSeller: true,
         varieties: [
-            { name: "12 pcs", price: 120 }
-            { name: "24 pcs", price: 240 }
-            { name: "48 + 2 pcs", price: 480 } 
+            { name: "12 pcs", price: 120 },
+            { name: "24 pcs", price: 240 },
+            { name: "48 + 2 pcs", price: 480 } ,
             { name: "96+ 4 pcs", price: 960 }
         ],
         flavors: [],
@@ -561,9 +558,9 @@ const menuList = [
         image: "images/cf-egg.jpg",
         bestSeller: true,
         varieties: [
-            { name: "12 pcs", price: 90 }
-            { name: "24 pcs", price: 180 }
-            { name: "48 + 2 pcs", price: 360 } 
+            { name: "12 pcs", price: 90 },
+            { name: "24 pcs", price: 180 },
+            { name: "48 + 2 pcs", price: 360 } ,
             { name: "96+ 4 pcs", price: 720 }
         ],
         flavors: [],
@@ -653,8 +650,8 @@ const menuList = [
         image: "images/cf-egg.jpg",
         bestSeller: true,
         varieties: [
-            { name: "Cheesy Fries", price: 99 }
-            { name: "Fries with BBQ Sauce", price: 99 }
+            { name: "Cheesy Fries", price: 99 },
+            { name: "Fries with BBQ Sauce", price: 99 },
             { name: "Fries with Buffalo Sauce", price: 99 }
         ],
         flavors: [],
@@ -666,15 +663,11 @@ const menuList = [
         image: "images/cf-egg.jpg",
         bestSeller: true,
         varieties: [
-            { name: "Cheesy Carbonara Noodles Buldak Overload", price: 180 }
-            { name: "Cheesy Carbonara Noodles Buldak with Wings", price: 190 }
-            { name: "", price:  }
+            { name: "Cheesy Carbonara Noodles Buldak Overload", price: 180 },
+            { name: "Cheesy Carbonara Noodles Buldak with Wings", price: 190 },
+          
         ],
-        Add Ons: [
-            { name: "", price:null  },
-            { name: "", price:null  },
-            { name: "", price:null  }
-        ],
+       
     },
     {
         name: "Classic Milk Tea",
