@@ -150,76 +150,7 @@
         <div class="col-md-9 col-lg-10 p-4">
             <div class="row" id="menu-items">
 
-                <!-- Item -->
-                <div class="col-md-4 mb-4 menu-item" data-category="friedrice">
-                    <div class="card shadow-sm">
-                        <span class="badge bg-danger best-seller-badge">🔥 Best Seller</span>
-                        <img src="images/cf-egg.jpg" class="card-img-top">
-                        <div class="card-body text-center">
-                            <h5>Pork Chao Fan Egg</h5>
-                            <p class="text-info">₱54</p>
-                            <h5>Bagoong Chao Fan Egg</h5>
-                            <p class="text-info">₱64</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 menu-item" data-category="friedrice">
-                    <div class="card shadow-sm">
-                        <img src="images/cf-siomai-egg.jpg" class="card-img-top">
-                        <div class="card-body text-center">
-                            <h5>Pork Chao Fan Siomai</h5>
-                            <p class="text-muted">₱79</p>
-                           <h5>Bagoong Chao Fan Siomai</h5>
-                            <p class="text-muted">₱89</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 menu-item" data-category="platters">
-                    <div class="card shadow-sm">
-                        <img src="" class="card-img-top">
-                        <div class="card-body text-center">
-                            <h5>Chicken Platter</h5>
-                            <p class="text-muted">₱180</p>
-                           
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 menu-item" data-category="drinks">
-                    <div class="card shadow-sm">
-                        <img src="" class="card-img-top">
-                        <div class="card-body text-center">
-                            <h5>Lemon Juice</h5>
-                            <p class="text-muted">₱60</p>
-                           
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 menu-item" data-category="coffee">
-                    <div class="card shadow-sm">
-                        <img src="" class="card-img-top">
-                        <div class="card-body text-center">
-                            <h5>Iced Coffee</h5>
-                            <p class="text-muted">₱90</p>
-                           
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4 menu-item" data-category="icecream">
-                    <div class="card shadow-sm">
-                        <img src="" class="card-img-top">
-                        <div class="card-body text-center">
-                            <h5>Vanilla Ice Cream</h5>
-                            <p class="text-muted">₱70</p>
-                            
-                        </div>
-                    </div>
-                </div>
-
+                
             </div>
         </div>
 
@@ -227,6 +158,8 @@
 </div>
 
 <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="menu.js"></script>
 <script>
     const buttons = document.querySelectorAll('.category-btn');
     const items = document.querySelectorAll('.menu-item');
@@ -263,6 +196,32 @@
         $('.menu-item[data-category="' + category + '"]').show();
     }
 });
+
+    function renderMenu(list) {
+
+    let html = "";
+
+    list.forEach(item => {
+
+        html += `
+        <div class="col-md-4 mb-4 menu-item">
+            <div class="card shadow-sm position-relative">
+
+                ${item.bestSeller ? '<span class="badge bg-danger best-seller-badge">🔥 Best Seller</span>' : ''}
+
+                <img src="${item.image}" class="card-img-top">
+
+                <div class="card-body text-center">
+                    <h5>${item.name}</h5>
+                    <p class="text-info">₱${item.price}</p>
+                    <button class="btn btn-primary btn-sm">Add</button>
+                </div>
+            </div>
+        </div>`;
+    });
+
+    $('#menu-items').html(html);
+}
 </script>
 
 </body>
