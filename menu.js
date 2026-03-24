@@ -14,7 +14,7 @@ const menuList = [
         name: "Pork Chao Fan Chicken Wings",
         price: 105,
         category: "friedrice",
-        image: "images/cf-chickenwings.jpg",
+        image: "images/cf-chickenwing.jpg",
         bestSeller: true,
         varieties: [
             { name: "Bagoong Chao Fan", price:115 }
