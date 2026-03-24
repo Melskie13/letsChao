@@ -65,6 +65,11 @@
             </div>
         </div>
 
+        <div id="addons-section" class="mt-4" style="display:none;">
+            <h4 class="mb-3">Add-ons</h4>
+            <div class="row" id="addons-container"></div>
+        </div>
+
     </div>
 </div>
 
@@ -89,11 +94,19 @@
             const filtered = menuList.filter(x => x.category === category);
             renderMenu(filtered);
         }
+        // SHOW ADDONS ONLY FOR FRIED RICE
+        if (category === "friedrice") {
+            $('#addons-section').show();
+            renderAddOns();
+        } else {
+            $('#addons-section').hide();
+        }
+
     });
 
 });
 
-    function renderMenu(list) {
+function renderMenu(list) {
 
     let html = "";
 
@@ -145,6 +158,26 @@
         </div>`;
     });
     $('#menu-items').html(html);
+}
+
+function renderAddOns() {
+
+    let html = "";
+
+    addOns.forEach(item => {
+        html += `
+        <div class="col-md-3 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body text-center">
+                    <h6>${item.name}</h6>
+                    <p class="text-success">+₱${item.price}</p>
+                </div>
+            </div>
+        </div>
+        `;
+    });
+
+    document.getElementById("addons-container").innerHTML = html;
 }
 </script>
 
