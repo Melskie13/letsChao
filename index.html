@@ -121,7 +121,7 @@
             renderMenu(filtered);
         }
         // SHOW ADDONS ONLY FOR FRIED RICE
-        if (category === "friedrice") {
+        if (category === "friedrice" || category === "all") {
             $('#addon-section').show();
             renderAddOns(addOns);
         } else {
