@@ -532,7 +532,7 @@ const menuList = [
             { name: "64+ 4 pcs", price: 1899 }
         ],
         flavors: [
-            { name: "Salted Egg, Teriyaki, Soy garlic, Buffalo, BBQ", price:  },
+            { name: "Salted Egg, Teriyaki, Soy garlic, Buffalo, BBQ", price:null  },
             { name: "Cheesy Wings for every 4pcs", price: 10 },
             { name: "Garlic Parmesan for every 4pcs", price: 10 }
         ],
