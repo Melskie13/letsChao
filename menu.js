@@ -27,7 +27,7 @@ const menuList = [
     },
     {
         name: "Strawberry w/ Oreo Yogurt",
-        price: ,
+        price: null,
         category: "yogurt",
         image: "images/yog-swo.jpg",
         bestSeller: true,
@@ -40,7 +40,7 @@ const menuList = [
     },
     {
         name: "Caramel and Graham Yogurt",
-        price: ,
+        price: null,
         category: "yogurt",
         image: "images/yog-swo.jpg",
         bestSeller: false,
@@ -53,7 +53,7 @@ const menuList = [
     },
     {
         name: "Blueberry w/ Nata Yogurt",
-        price: ,
+        price: null,
         category: "yogurt",
         image: "images/yog-swo.jpg",
         bestSeller: false,
@@ -66,7 +66,7 @@ const menuList = [
     },
     {
         name: "Caramel w/ Mallows Ice Cream",
-        price: ,
+        price:null ,
         category: "icecream",
         image: "images/ic-cjo.jpg",
         bestSeller: false,
@@ -79,7 +79,7 @@ const menuList = [
     },
     {
         name: "Coffee Jelly w/ Oreo Ice Cream",
-        price: ,
+        price: null,
         category: "icecream",
         image: "images/ic-cjo.jpg",
         bestSeller: false,
@@ -213,7 +213,7 @@ const menuList = [
     },
     {
         name: "Iced Americano",
-        price: ,
+        price: null,
         category: "Iced Coffee",
         image: "images/yog-swo.jpg",
         bestSeller: false,
@@ -226,7 +226,7 @@ const menuList = [
     },
     {
         name: "Caramel Macchiato",
-        price: ,
+        price: null,
         category: "Iced Coffee",
         image: "images/yog-swo.jpg",
         bestSeller: true,
@@ -239,7 +239,7 @@ const menuList = [
     },
     {
         name: "Cafe Latte",
-        price: ,
+        price: null,
         category: "Iced Coffee",
         image: "images/yog-swo.jpg",
         bestSeller: false,
@@ -252,7 +252,7 @@ const menuList = [
     },
     {
         name: "Coffee Jelly Latte",
-        price: ,
+        price: null,
         category: "Iced Coffee",
         image: "images/yog-swo.jpg",
         bestSeller: false,
@@ -265,7 +265,7 @@ const menuList = [
     },
     {
         name: "Choco Lava",
-        price: ,
+        price:null ,
         category: "Milk Based Drinks",
         image: "images/yog-swo.jpg",
         bestSeller: true,
@@ -278,7 +278,7 @@ const menuList = [
     },
     {
         name: "Mango Milk",
-        price: ,
+        price:null ,
         category: "Milk Based Drinks",
         image: "images/yog-swo.jpg",
         bestSeller: false,
@@ -291,7 +291,7 @@ const menuList = [
     },
     {
         name: "Blueberry Milk",
-        price: ,
+        price: null,
         category: "Milk Based Drinks",
         image: "images/yog-swo.jpg",
         bestSeller: false,
@@ -304,7 +304,7 @@ const menuList = [
     },
     {
         name: "Strawberry Milk",
-        price: ,
+        price: null,
         category: "Milk Based Drinks",
         image: "images/yog-swo.jpg",
         bestSeller: true,
@@ -317,7 +317,7 @@ const menuList = [
     },
     {
         name: "Kiwi",
-        price: ,
+        price: null,
         category: "Fruit Tea",
         image: "images/yog-swo.jpg",
         bestSeller: false,
@@ -330,7 +330,7 @@ const menuList = [
     },
     {
         name: "Blueberry",
-        price: ,
+        price: null,
         category: "Fruit Tea",
         image: "images/yog-swo.jpg",
         bestSeller: true,
@@ -343,7 +343,7 @@ const menuList = [
     },
     {
         name: "Green Apple",
-        price: ,
+        price: null,
         category: "Fruit Tea",
         image: "images/yog-swo.jpg",
         bestSeller: false,
@@ -356,7 +356,7 @@ const menuList = [
     },
     {
         name: "Lychee",
-        price: ,
+        price:null ,
         category: "Fruit Tea",
         image: "images/yog-swo.jpg",
         bestSeller: true,
@@ -369,7 +369,7 @@ const menuList = [
     },
     {
         name: "Passion Fruit",
-        price: ,
+        price: null,
         category: "Fruit Tea",
         image: "images/yog-swo.jpg",
         bestSeller: false,
@@ -382,7 +382,7 @@ const menuList = [
     },
     {
         name: "Lemon",
-        price: ,
+        price: null,
         category: "Fruit Tea",
         image: "images/yog-swo.jpg",
         bestSeller: false,
@@ -395,7 +395,7 @@ const menuList = [
     },
     {
         name: "Choco Lava Float",
-        price: ,
+        price:null ,
         category: "Float",
         image: "images/yog-swo.jpg",
         bestSeller: true,
@@ -408,7 +408,7 @@ const menuList = [
     },
     {
         name: "Coffee Float",
-        price: ,
+        price: null,
         category: "Float",
         image: "images/yog-swo.jpg",
         bestSeller: true,
@@ -421,7 +421,7 @@ const menuList = [
     },
     {
         name: "Strawberry Milk Float",
-        price: ,
+        price: null,
         category: "Float",
         image: "images/yog-swo.jpg",
         bestSeller: true,
@@ -434,7 +434,7 @@ const menuList = [
     },
     {
         name: "Blueberry Milk Float",
-        price: ,
+        price:null,
         category: "Float",
         image: "images/yog-swo.jpg",
         bestSeller: false,
@@ -447,7 +447,7 @@ const menuList = [
     },
     {
         name: "Milky Mango Float",
-        price: ,
+        price: null,
         category: "Float",
         image: "images/yog-swo.jpg",
         bestSeller: false,
@@ -486,7 +486,7 @@ const menuList = [
     },
     {
         name: "Fresh Lemon",
-        price: ,
+        price: null,
         category: "Fresh Drink",
         image: "images/yog-swo.jpg",
         bestSeller: true,
@@ -499,7 +499,7 @@ const menuList = [
     },
     {
         name: "Fresh Lemon with Yakult",
-        price: ,
+        price: null,
         category: "Fresh Drink",
         image: "images/yog-swo.jpg",
         bestSeller: true,
@@ -523,7 +523,7 @@ const menuList = [
     },
     {
         name: "Chicken Wings",
-        price: ,
+        price: null,
         category: "Platter",
         image: "images/cf-egg.jpg",
         bestSeller: false,
@@ -542,7 +542,7 @@ const menuList = [
     },
     {
         name: "Shanghai",
-        price: ,
+        price: null,
         category: "Platter",
         image: "images/cf-egg.jpg",
         bestSeller: true,
@@ -556,7 +556,7 @@ const menuList = [
     },
     {
         name: "Siomai",
-        price: ,
+        price: null,
         category: "Platter",
         image: "images/cf-egg.jpg",
         bestSeller: true,
@@ -570,7 +570,7 @@ const menuList = [
     },
     {
         name: "Caramel and Graham Ice Cream",
-        price: ,
+        price: null,
         category: "icecream",
         image: "images/ic-cjo.jpg",
         bestSeller: false,
@@ -583,7 +583,7 @@ const menuList = [
     },
     {
         name: "Strawberry w/ Oreo Ice Cream",
-        price: ,
+        price: null,
         category: "icecream",
         image: "images/ic-cjo.jpg",
         bestSeller: false,
@@ -596,7 +596,7 @@ const menuList = [
     },
     {
         name: "Blueberry with Nata Ice Cream",
-        price: ,
+        price: null,
         category: "icecream",
         image: "images/ic-cjo.jpg",
         bestSeller: false,
@@ -609,7 +609,7 @@ const menuList = [
     },
     {
         name: "Chocolate w/ Oreo Ice Cream",
-        price: ,
+        price: null,
         category: "icecream",
         image: "images/ic-cjo.jpg",
         bestSeller: false,
@@ -622,7 +622,7 @@ const menuList = [
     },
     {
         name: "Plain Vanilla Ice Cream",
-        price: ,
+        price: null,
         category: "icecream",
         image: "images/ic-cjo.jpg",
         bestSeller: true,
@@ -635,7 +635,7 @@ const menuList = [
     },
     {
         name: "Plain Yogurt",
-        price: ,
+        price: null,
         category: "yogurt",
         image: "images/yog-swo.jpg",
         bestSeller: true,
@@ -678,7 +678,7 @@ const menuList = [
     },
     {
         name: "Classic Milk Tea",
-        price: ,
+        price: null,
         category: "Milk Tea",
         image: "images/ic-cjo.jpg",
         bestSeller: false,
@@ -691,7 +691,7 @@ const menuList = [
     },
     {
         name: "Oreo Cream cheese Milk Tea",
-        price: ,
+        price: null,
         category: "Milk Tea",
         image: "images/ic-cjo.jpg",
         bestSeller: false,
@@ -704,7 +704,7 @@ const menuList = [
     },
     {
         name: "Oreo Milk Tea",
-        price: ,
+        price: null,
         category: "Milk Tea",
         image: "images/ic-cjo.jpg",
         bestSeller: false,
@@ -714,9 +714,7 @@ const menuList = [
         ],
         flavors: [
         ],
-    },
-
-   
+    }
 ];
 
 const addOns = [
