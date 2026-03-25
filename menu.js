@@ -151,7 +151,7 @@ const menuList = [
         name: "Pork Chaofan Porkchop",
         price: 120,
         category: "friedrice",
-        image: "images/cf-egg.jpg",
+        image: "images/cf-egg-chicken.jpg",
         bestSeller: true,
         varieties: [
             { name: "Bagoong Chaofan Porkchop", price: 130 }
@@ -216,8 +216,8 @@ const menuList = [
     {
         name: "Iced Americano",
         price: null,
-        category: "Iced Coffee",
-        image: "images/yog-swo.jpg",
+        category: "coffee",
+        image: "images/100031110.jpg",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:60 },
@@ -229,8 +229,8 @@ const menuList = [
     {
         name: "Caramel Macchiato",
         price: null,
-        category: "Iced Coffee",
-        image: "images/yog-swo.jpg",
+        category: "coffee",
+        image: "images/100031107.jpg",
         bestSeller: true,
         varieties: [
             { name: "Medium 16oz", price:69 },
@@ -242,8 +242,8 @@ const menuList = [
     {
         name: "Cafe Latte",
         price: null,
-        category: "Iced Coffee",
-        image: "images/yog-swo.jpg",
+        category: "coffee",
+        image: "images/100031108.jpg",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:69 },
@@ -255,8 +255,8 @@ const menuList = [
     {
         name: "Coffee Jelly Latte",
         price: null,
-        category: "Iced Coffee",
-        image: "images/yog-swo.jpg",
+        category: "coffee",
+        image: "images/100031112.jpg",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:80 },
@@ -268,8 +268,8 @@ const menuList = [
     {
         name: "Choco Lava",
         price:null ,
-        category: "Milk Based Drinks",
-        image: "images/yog-swo.jpg",
+        category: "milkbase",
+        image: "images/100031109.jpg",
         bestSeller: true,
         varieties: [
             { name: "Medium 16oz", price:70 },
@@ -281,7 +281,7 @@ const menuList = [
     {
         name: "Mango Milk",
         price:null ,
-        category: "Milk Based Drinks",
+        category: "milkbase",
         image: "images/yog-swo.jpg",
         bestSeller: false,
         varieties: [
@@ -294,7 +294,7 @@ const menuList = [
     {
         name: "Blueberry Milk",
         price: null,
-        category: "Milk Based Drinks",
+        category: "milkbase",
         image: "images/yog-swo.jpg",
         bestSeller: false,
         varieties: [
@@ -307,7 +307,7 @@ const menuList = [
     {
         name: "Strawberry Milk",
         price: null,
-        category: "Milk Based Drinks",
+        category: "milkbase",
         image: "images/yog-swo.jpg",
         bestSeller: true,
         varieties: [
@@ -320,7 +320,7 @@ const menuList = [
     {
         name: "Kiwi",
         price: null,
-        category: "Fruit Tea",
+        category: "fruitea",
         image: "images/yog-swo.jpg",
         bestSeller: false,
         varieties: [
@@ -333,7 +333,7 @@ const menuList = [
     {
         name: "Blueberry",
         price: null,
-        category: "Fruit Tea",
+        category: "fruitea",
         image: "images/yog-swo.jpg",
         bestSeller: true,
         varieties: [
@@ -346,7 +346,7 @@ const menuList = [
     {
         name: "Green Apple",
         price: null,
-        category: "Fruit Tea",
+        category: "fruitea",
         image: "images/yog-swo.jpg",
         bestSeller: false,
         varieties: [
@@ -359,7 +359,7 @@ const menuList = [
     {
         name: "Lychee",
         price:null ,
-        category: "Fruit Tea",
+        category: "fruitea",
         image: "images/yog-swo.jpg",
         bestSeller: true,
         varieties: [
@@ -372,7 +372,7 @@ const menuList = [
     {
         name: "Passion Fruit",
         price: null,
-        category: "Fruit Tea",
+        category: "fruitea",
         image: "images/yog-swo.jpg",
         bestSeller: false,
         varieties: [
@@ -385,7 +385,7 @@ const menuList = [
     {
         name: "Lemon",
         price: null,
-        category: "Fruit Tea",
+        category: "fruitea",
         image: "images/yog-swo.jpg",
         bestSeller: false,
         varieties: [
@@ -398,7 +398,7 @@ const menuList = [
     {
         name: "Choco Lava Float",
         price:null ,
-        category: "Float",
+        category: "float",
         image: "images/yog-swo.jpg",
         bestSeller: true,
         varieties: [
@@ -411,7 +411,7 @@ const menuList = [
     {
         name: "Coffee Float",
         price: null,
-        category: "Float",
+        category: "float",
         image: "images/yog-swo.jpg",
         bestSeller: true,
         varieties: [
@@ -424,7 +424,7 @@ const menuList = [
     {
         name: "Strawberry Milk Float",
         price: null,
-        category: "Float",
+        category: "float",
         image: "images/yog-swo.jpg",
         bestSeller: true,
         varieties: [
@@ -437,7 +437,7 @@ const menuList = [
     {
         name: "Blueberry Milk Float",
         price:null,
-        category: "Float",
+        category: "float",
         image: "images/yog-swo.jpg",
         bestSeller: false,
         varieties: [
@@ -450,7 +450,7 @@ const menuList = [
     {
         name: "Milky Mango Float",
         price: null,
-        category: "Float",
+        category: "float",
         image: "images/yog-swo.jpg",
         bestSeller: false,
         varieties: [
@@ -463,7 +463,7 @@ const menuList = [
     {
         name: "Coke Float",
         price: 55,
-        category: "Float",
+        category: "float",
         image: "images/yog-swo.jpg",
         bestSeller: true,
         varieties: [
@@ -474,7 +474,7 @@ const menuList = [
     {
         name: "Strawberry Puree with Lemonade",
         price: 80,
-        category: "Fresh Drink",
+        category: "freshdrink",
         image: "images/yog-swo.jpg",
         bestSeller: false,
         varieties: [
@@ -486,7 +486,7 @@ const menuList = [
     {
         name: "Fresh Lemon",
         price: null,
-        category: "Fresh Drink",
+        category: "freshdrink",
         image: "images/yog-swo.jpg",
         bestSeller: true,
         varieties: [
@@ -499,7 +499,7 @@ const menuList = [
     {
         name: "Fresh Lemon with Yakult",
         price: null,
-        category: "Fresh Drink",
+        category: "freshdrink",
         image: "images/yog-swo.jpg",
         bestSeller: true,
         varieties: [
@@ -512,8 +512,8 @@ const menuList = [
     {
         name: "Bilao good for 5 pax (Butterfly squid, porkchop, 8 pcs siomai, 6 pcs shanghai, 3pcs egg and 5 cups of Pork Chaofan",
         price: 520,
-        category: "Platters",
-        image: "images/cf-egg.jpg",
+        category: "platters",
+        image: "images/1000031093.jpg",
         bestSeller: true,
         varieties: [
       
@@ -523,8 +523,8 @@ const menuList = [
     {
         name: "Chicken Wings",
         price: null,
-        category: "Platter",
-        image: "images/cf-egg.jpg",
+        category: "platters",
+        image: "images/1000031094.jpg",
         bestSeller: false,
         varieties: [
             { name: "4 pcs", price: 125 },
@@ -534,7 +534,7 @@ const menuList = [
             { name: "64+ 4 pcs", price: 1899 }
         ],
         flavors: [
-            { name: "Salted Egg, Teriyaki, Soy garlic, Buffalo, BBQ", price:null  },
+            { name: "Salted Egg, Teriyaki, Soy garlic, Buffalo, BBQ", price:5  },
             { name: "Cheesy Wings for every 4pcs", price: 10 },
             { name: "Garlic Parmesan for every 4pcs", price: 10 }
         ],
@@ -542,8 +542,8 @@ const menuList = [
     {
         name: "Shanghai",
         price: null,
-        category: "Platter",
-        image: "images/cf-egg.jpg",
+        category: "platters",
+        image: "images/1000031095.jpg",
         bestSeller: true,
         varieties: [
             { name: "12 pcs", price: 120 },
@@ -556,8 +556,8 @@ const menuList = [
     {
         name: "Siomai",
         price: null,
-        category: "Platter",
-        image: "images/cf-egg.jpg",
+        category: "platters",
+        image: "images/1000031096.jpg",
         bestSeller: true,
         varieties: [
             { name: "12 pcs", price: 90 },
@@ -648,8 +648,8 @@ const menuList = [
     {
         name: "French Fries",
         price: 75,
-        category: "Snacks",
-        image: "images/cf-egg.jpg",
+        category: "snacks",
+        image: "images/1000031104.jpg",
         bestSeller: true,
         varieties: [
             { name: "Cheesy Fries", price: 99 },
@@ -661,8 +661,8 @@ const menuList = [
     {
         name: "Cheesy Carbonara Noodles Buldak",
         price: 130,
-        category: "Snacks",
-        image: "images/cf-egg.jpg",
+        category: "snacks",
+        image: "images/1000031097.jpg",
         bestSeller: true,
         varieties: [
             { name: "Cheesy Carbonara Noodles Buldak Overload", price: 180 },
@@ -674,7 +674,7 @@ const menuList = [
     {
         name: "Classic Milk Tea",
         price: null,
-        category: "Milk Tea",
+        category: "milktea",
         image: "images/ic-cjo.jpg",
         bestSeller: false,
         varieties: [
@@ -687,7 +687,7 @@ const menuList = [
     {
         name: "Oreo Cream cheese Milk Tea",
         price: null,
-        category: "Milk Tea",
+        category: "milktea",
         image: "images/ic-cjo.jpg",
         bestSeller: false,
         varieties: [
@@ -700,7 +700,7 @@ const menuList = [
     {
         name: "Oreo Milk Tea",
         price: null,
-        category: "Milk Tea",
+        category: "milktea",
         image: "images/ic-cjo.jpg",
         bestSeller: false,
         varieties: [
