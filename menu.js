@@ -730,16 +730,50 @@ const menuList = [
 
 const addOns = [
     {
-        name: "Chili Oil",
-        price: 10,  
+        name: "Wing Sauce",
+        price: 20,  
     },
     {
         name: "Extra Egg",
         price: 15,
     },
     {
-        name: "Garlic Topping",
-        price: 12,
+        name: "Cabbage",
+        price: 15,
+    },
+    {
+        name: "Hotdog (1)",
+        price: 12,  
+    },
+    {
+        name: "Spam (1)",
+        price: 20,
+    },
+    {
+        name: "Shanghai (3)",
+        price: 30,
+    },{
+        name: "Siomai (4)",
+        price: 30,  
+    },
+    {
+        name: "Buterfly Squid",
+        price: 110,
+    },
+    {
+        name: "Bangus",
+        price: 60,
+    },{
+        name: "Wings (2)",
+        price: 60,  
+    },
+    {
+        name: "Plain Rice",
+        price: 15,
+    },
+    {
+        name: "Fruit Tea",
+        price: 30,
     }
     
 ];
