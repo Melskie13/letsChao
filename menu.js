@@ -3,7 +3,7 @@ const menuList = [
         name: "Pork Chaofan Egg",
         price: 54,
         category: "friedrice",
-        image: "images/cf-egg.jpg",
+        image: "images/cf-egg1.jpg",
         bestSeller: false,
         varieties: [
             { name: "Bagoong Chaofan Egg", price: 64 }
@@ -14,7 +14,7 @@ const menuList = [
         name: "Pork Chaofan Chicken Wings",
         price: 105,
         category: "friedrice",
-        image: "images/cf-chickenwing.jpg",
+        image: "images/cf-egg-chickenwing.jpg",
         bestSeller: true,
         varieties: [
             { name: "Bagoong Chaofan Wings", price:115 }
@@ -96,7 +96,7 @@ const menuList = [
         name: "Pork Chaofan Siomai",
         price: 79,
         category: "friedrice",
-        image: "images/cf-egg.jpg",
+        image: "images/cf-egg-siomai.jpg",
         bestSeller: false,
         varieties: [
             { name: "Bagoong Chaofan Siomai", price: 89 }
@@ -107,7 +107,7 @@ const menuList = [
         name: "Pork Chaofan Hotdog",
         price: 79,
         category: "friedrice",
-        image: "images/cf-egg.jpg",
+        image: "images/cf-egg-hotdog.jpg",
         bestSeller: false,
         varieties: [
             { name: "Bagoong Chaofan Hotdog", price: 89 }
@@ -118,7 +118,7 @@ const menuList = [
         name: "Pork Chaofan Shanghai",
         price: 89,
         category: "friedrice",
-        image: "images/cf-egg.jpg",
+        image: "images/cf-egg-shanghai.jpg",
         bestSeller: false,
         varieties: [
             { name: "Bagoong Chaofan Shanghai", price: 99 }
@@ -129,7 +129,7 @@ const menuList = [
         name: "Pork Chaofan Spam",
         price: 89,
         category: "friedrice",
-        image: "images/cf-egg.jpg",
+        image: "images/cf-egg-spam.jpg",
         bestSeller: true,
         varieties: [
             { name: "Bagoong Chaofan Spam", price: 99 }
@@ -140,7 +140,7 @@ const menuList = [
         name: "Pork Chaofan Bangus",
         price: 109,
         category: "friedrice",
-        image: "images/cf-egg.jpg",
+        image: "images/cf-egg-bangus.jpg",
         bestSeller: false,
         varieties: [
             { name: "Bagoong Chaofan Bangus", price: 119 }
@@ -162,7 +162,7 @@ const menuList = [
         name: "Pork Chaofan Tonkatsu",
         price: 125,
         category: "friedrice",
-        image: "images/cf-egg.jpg",
+        image: "images/cf-egg-tonkatsu.jpg",
         bestSeller: false,
         varieties: [
             { name: "Bagoong Chaofan Tonkatsu", price: 135 }
@@ -173,7 +173,7 @@ const menuList = [
         name: "Pork Chaofan Overload",
         price: 120,
         category: "friedrice",
-        image: "images/cf-egg.jpg",
+        image: "images/cf-egg-overload.jpg",
         bestSeller: false,
         varieties: [
             { name: "Bagoong Chaofan Overload", price: 130 }
@@ -184,7 +184,7 @@ const menuList = [
         name: "Pork Chaofan Butterfly Squid",
         price: 149,
         category: "friedrice",
-        image: "images/cf-egg.jpg",
+        image: "images/cf-egg-squid.jpg",
         bestSeller: true,
         varieties: [
             { name: "Bagoong Chaofan Butterfly Squid", price: 159 }
@@ -195,7 +195,7 @@ const menuList = [
         name: "Pork Chaofan Giant Liempo",
         price: 180,
         category: "friedrice",
-        image: "images/cf-egg.jpg",
+        image: "images/cf-egg-liempo.jpg",
         bestSeller: true,
         varieties: [
             { name: "Bagoong Chaofan Giant Liempo", price: 190 }
@@ -206,7 +206,7 @@ const menuList = [
         name: "Pork Chaofan Tapa",
         price: 149,
         category: "friedrice",
-        image: "images/cf-egg.jpg",
+        image: "images/cf-egg-tapa.jpg",
         bestSeller: false,
         varieties: [
             { name: "Bagoong Chaofan Tapa", price: 159 }
