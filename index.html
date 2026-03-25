@@ -38,7 +38,7 @@
 
     
 .addon-panel {
-    position: sticky;
+    
     top: 20px;
     background: #fff;
     padding: 15px;
@@ -171,7 +171,7 @@
             renderAddOns(addOns);
 
             $('#addon-section-milktea').show();
-            renderAddOns(milkteaAddOns);
+            renderAddOns(milkTeaAddOns);
 
              $('#addon-section-snacks').show();
             renderAddOns(snacksAddOns);
@@ -182,14 +182,15 @@
 
              $('#addon-section-milktea').hide();
             $('#addon-section-snacks').hide();
-        }else if(category === "milktea"){
+        }
+        else if(category === "milktea"){
             $('#addon-section-milktea').show();
-            renderAddOns(milkteaAddOns);
+            renderAddOns(milkTeaAddOns);
 
              $('#addon-section').hide();
             $('#addon-section-snacks').hide();
         }
-            else if(category === "snacks"){
+        else if(category === "snacks"){
             $('#addon-section-snacks').show();
             renderAddOns(snacksAddOns);
 
