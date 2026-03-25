@@ -171,10 +171,10 @@
             renderAddOns(addOns);
 
             $('#addon-section-milktea').show();
-            renderAddOns(milkTeaAddOns);
+            renderMilkTeaAddOns(milkTeaAddOns);
 
              $('#addon-section-snacks').show();
-            renderAddOns(snacksAddOns);
+            renderSnacksAddOns(snacksAddOns);
         }
         if (category === "friedrice" ) {
             $('#addon-section').show();
@@ -185,14 +185,14 @@
         }
         else if(category === "milktea"){
             $('#addon-section-milktea').show();
-            renderAddOns(milkTeaAddOns);
+            renderMilkTeaAddOns(milkTeaAddOns);
 
              $('#addon-section').hide();
             $('#addon-section-snacks').hide();
         }
         else if(category === "snacks"){
             $('#addon-section-snacks').show();
-            renderAddOns(snacksAddOns);
+            renderSnacksAddOns(snacksAddOns);
 
              $('#addon-section').hide();
             $('#addon-section-milktea').hide();
