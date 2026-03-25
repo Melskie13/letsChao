@@ -299,7 +299,7 @@ const menuList = [
         name: "Mango Milk",
         price:null ,
         category: "milkbase",
-        image: "images/yog-swo.jpg",
+        image: "images/milkbasem.png",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:70 },
@@ -312,7 +312,7 @@ const menuList = [
         name: "Blueberry Milk",
         price: null,
         category: "milkbase",
-        image: "images/yog-swo.jpg",
+        image: "images/milkbaseb.png",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:70 },
@@ -325,7 +325,20 @@ const menuList = [
         name: "Strawberry Milk",
         price: null,
         category: "milkbase",
-        image: "images/yog-swo.jpg",
+        image: "images/milkbases.png",
+        bestSeller: true,
+        varieties: [
+            { name: "Medium 16oz", price:70 },
+             { name: "Large 22oz", price:80 }
+        ],
+        flavors: [
+        ],
+    },
+    {
+        name: "Choco Milk",
+        price: null,
+        category: "milkbase",
+        image: "images/milkbasec.png",
         bestSeller: true,
         varieties: [
             { name: "Medium 16oz", price:70 },
