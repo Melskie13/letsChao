@@ -163,7 +163,7 @@ function renderMenu(list) {
         varietyHtml += `
             <div class="menu-row fw-bold">
                 <span>${item.name}</span>
-                <span class="text-info">${item.price ? `+₱${item.price}` : ''}</span>
+                <span class="text-info">${item.price ? `₱${item.price}` : ''}</span>
             </div>
         `;
         
@@ -173,7 +173,7 @@ function renderMenu(list) {
                 varietyHtml += `
                     <div class="menu-row fw-bold">
                         <span>${v.name}</span>
-                        <span class="text-info">${v.price ? `+₱${v.price}` : ''}</span>
+                        <span class="text-info">${v.price ? `₱${v.price}` : ''}</span>
                     </div>
                 `;
             });
