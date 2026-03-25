@@ -121,8 +121,18 @@
          <!-- ADD-ONS PANEL (RIGHT SIDE) -->
         <div class="col-md-2 p-3">
             <div id="addon-section" class="addon-panel" style="display:none;">
-                <h5>Add-ons</h5>
+                <h5>Chao Fan Add-ons</h5>
                 <div id="addon-items"></div>
+            </div>
+
+            <div id="addon-section-milktea" class="addon-panel" style="display:none;">
+                <h5>Milk Tea Add-ons</h5>
+                <div id="addon-items-milktea"></div>
+            </div>
+
+            <div id="addon-section-snacks" class="addon-panel" style="display:none;">
+                <h5>Snacks Add-ons</h5>
+                <div id="addon-items-snacks"></div>
             </div>
         </div>
 
@@ -156,11 +166,40 @@
             renderMenu(filtered);
         }
         // SHOW ADDONS ONLY FOR FRIED RICE
-        if (category === "friedrice" || category === "all") {
+        if(category === "all"){
             $('#addon-section').show();
             renderAddOns(addOns);
-        } else {
+
+            $('#addon-section-milktea').show();
+            renderAddOns(milkteaAddOns);
+
+             $('#addon-section-snacks').show();
+            renderAddOns(snacksAddOns);
+        }
+        if (category === "friedrice" ) {
+            $('#addon-section').show();
+            renderAddOns(addOns);
+
+             $('#addon-section-milktea').hide();
+            $('#addon-section-snacks').hide();
+        }else if(category === "milktea"){
+            $('#addon-section-milktea').show();
+            renderAddOns(milkteaAddOns);
+
+             $('#addon-section').hide();
+            $('#addon-section-snacks').hide();
+        }
+            else if(category === "snacks"){
+            $('#addon-section-snacks').show();
+            renderAddOns(snacksAddOns);
+
+             $('#addon-section').hide();
+            $('#addon-section-milktea').hide();
+        } 
+        else {
             $('#addon-section').hide();
+            $('#addon-section-milktea').hide();
+             $('#addon-section-snacks').hide();
         }
 
     });
@@ -242,6 +281,43 @@ function renderAddOns(addOns) {
     });
 
     $('#addon-items').html(html);
+
+    
+}
+
+function renderMilkTeaAddOns(addOns) {
+
+    let html = "";
+
+    addOns.forEach(add => {
+        html += `
+        <div class="card shadow-sm">
+            <div class="card-body text-center p-1">
+                <small class="mb-0">${add.name}</small>
+                <small class="text-success"> ${add.price ? ` +₱${add.price}` : ''}</small>
+            </div>
+        </div>`;
+    });
+
+    $('#addon-items-milktea').html(html);
+
+    
+}
+    function renderSnacksAddOns(addOns) {
+
+    let html = "";
+
+    addOns.forEach(add => {
+        html += `
+        <div class="card shadow-sm">
+            <div class="card-body text-center p-1">
+                <small class="mb-0">${add.name}</small>
+                <small class="text-success"> ${add.price ? ` +₱${add.price}` : ''}</small>
+            </div>
+        </div>`;
+    });
+
+    $('#addon-items-snacks').html(html);
 
     
 }
