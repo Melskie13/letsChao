@@ -147,8 +147,18 @@
     $(document).ready(function () {
 
     renderMenu(menuList.sort((a, b) => {
-    return categoryOrder.indexOf(a.category) - categoryOrder.indexOf(b.category);
-}));
+        return categoryOrder.indexOf(a.category) - categoryOrder.indexOf(b.category);
+    }));
+
+    $('#addon-section').show();
+    renderAddOns(addOns);
+    $('#addon-section-milktea').show();
+    renderMilkTeaAddOns(milkTeaAddOns);
+
+     $('#addon-section-snacks').show();
+    renderSnacksAddOns(snacksAddOns);
+
+        
 
     // CATEGORY FILTER
     $('.category-btn').on('click', function () {
@@ -165,7 +175,7 @@
             const filtered = menuList.filter(x => x.category === category);
             renderMenu(filtered);
         }
-        // SHOW ADDONS ONLY FOR FRIED RICE
+        // SHOW ADDONS
         if(category === "all"){
             $('#addon-section').show();
             renderAddOns(addOns);
