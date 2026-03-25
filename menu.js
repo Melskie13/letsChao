@@ -490,7 +490,7 @@ const menuList = [
         name: "Strawberry Puree with Lemonade",
         price: 80,
         category: "freshdrink",
-        image: "images/yog-swo.jpg",
+        image: "images/1000031131.jpg",
         bestSeller: false,
         varieties: [
             
@@ -502,7 +502,7 @@ const menuList = [
         name: "Fresh Lemon",
         price: null,
         category: "freshdrink",
-        image: "images/yog-swo.jpg",
+        image: "images/1000031131.jpg",
         bestSeller: true,
         varieties: [
             { name: "Medium 16oz", price:49 },
@@ -515,7 +515,7 @@ const menuList = [
         name: "Fresh Lemon with Yakult",
         price: null,
         category: "freshdrink",
-        image: "images/yog-swo.jpg",
+        image: "images/1000031132.jpg",
         bestSeller: true,
         varieties: [
             { name: "Medium 16oz", price:69 },
@@ -580,6 +580,18 @@ const menuList = [
             { name: "24 pcs", price: 180 },
             { name: "48 + 2 pcs", price: 360 } ,
             { name: "96+ 4 pcs", price: 720 }
+        ],
+        flavors: [],
+    },
+    {
+        name: "Pork Chao Fan Platter",
+        price: 169,
+        category: "platters",
+        image: "images/1000031096.jpg",
+        bestSeller: true,
+        varieties: [
+            { name: "Bagoong Chaofan Platter", price: 199 },
+           
         ],
         flavors: [],
     },
