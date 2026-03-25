@@ -587,7 +587,7 @@ const menuList = [
         name: "Pork Chao Fan Platter",
         price: 169,
         category: "platters",
-        image: "images/1000031096.jpg",
+        image: "images/chaofanPlatter.jpg",
         bestSeller: true,
         varieties: [
             { name: "Bagoong Chaofan Platter", price: 199 },
