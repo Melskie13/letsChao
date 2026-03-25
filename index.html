@@ -169,14 +169,13 @@
         if(category === "all"){
             $('#addon-section').show();
             renderAddOns(addOns);
-
             $('#addon-section-milktea').show();
             renderMilkTeaAddOns(milkTeaAddOns);
 
              $('#addon-section-snacks').show();
             renderSnacksAddOns(snacksAddOns);
         }
-        if (category === "friedrice" ) {
+        else if (category === "friedrice" ) {
             $('#addon-section').show();
             renderAddOns(addOns);
 
