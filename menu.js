@@ -26,23 +26,6 @@ const menuList = [
         flavors: [],
     },
     {
-        name: "Pork Chaofan Chicken Wings",
-        price: 105,
-        category: "friedrice",
-        image: "images/cf-egg-chickenwing.jpg",
-        bestSeller: true,
-        varieties: [
-            { name: "Bagoong Chaofan Wings", price:115 }
-        ],
-        flavors: [
-            { name: "Buffalo, BBQ", price: 5 },
-            { name: "Soy garlic", price: 5 },
-            { name: "Buffalo, BBQ", price: 5 },
-            { name: "Cheesy Wings", price: 15 },
-            { name: "Garlic Parmesan", price: 15 }
-        ],
-    },
-    {
         name: "Strawberry w/ Oreo Yogurt",
         price: null,
         category: "yogurt",
@@ -227,6 +210,23 @@ const menuList = [
             { name: "Bagoong Chaofan Tapa", price: 159 }
         ],
         flavors: [],
+    },
+    {
+        name: "Pork Chaofan Chicken Wings",
+        price: 105,
+        category: "friedrice",
+        image: "images/cf-egg-chickenwing.jpg",
+        bestSeller: true,
+        varieties: [
+            { name: "Bagoong Chaofan Wings", price:115 }
+        ],
+        flavors: [
+            { name: "Buffalo, BBQ", price: 5 },
+            { name: "Soy garlic", price: 5 },
+            { name: "Buffalo, BBQ", price: 5 },
+            { name: "Cheesy Wings", price: 15 },
+            { name: "Garlic Parmesan", price: 15 }
+        ],
     },
     {
         name: "Iced Americano",
