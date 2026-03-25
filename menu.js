@@ -740,6 +740,34 @@ const menuList = [
     }
 ];
 
+const milkTeaAddOns = [
+    {
+        name: "Oreo",
+        price: 15,  
+    },
+    {
+        name: "Cream Cheese",
+        price: 30,
+    },
+    {
+        name: "Coffee Jelly",
+        price: 15,
+    },
+   
+];
+const snacksAddOns = [
+    {
+        name: "Cheese Sauce",
+        price: 20,  
+    },
+    {
+        name: "Nori 1 Pack",
+        price: 25,
+    },
+    
+];
+
+
 const addOns = [
     {
         name: "Wing Sauce",
