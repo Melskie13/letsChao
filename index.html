@@ -115,7 +115,9 @@
 <script>
     $(document).ready(function () {
 
-    renderMenu(menuList);
+    renderMenu(menuList.sort((a, b) => {
+    return categoryOrder.indexOf(a.category) - categoryOrder.indexOf(b.category);
+}));
 
     // CATEGORY FILTER
     $('.category-btn').on('click', function () {
@@ -125,7 +127,9 @@
         const category = $(this).data('category');
 
         if (category === 'all') {
-            renderMenu(menuList);
+            renderMenu(menuList.sort((a, b) => {
+    return categoryOrder.indexOf(a.category) - categoryOrder.indexOf(b.category);
+}));
         } else {
             const filtered = menuList.filter(x => x.category === category);
             renderMenu(filtered);
