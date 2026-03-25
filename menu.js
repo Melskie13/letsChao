@@ -232,7 +232,7 @@ const menuList = [
         name: "Iced Americano",
         price: null,
         category: "coffee",
-        image: "images/100031110.jpg",
+        image: "images/1000031110.jpg",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:60 },
@@ -245,7 +245,7 @@ const menuList = [
         name: "Caramel Macchiato",
         price: null,
         category: "coffee",
-        image: "images/100031107.jpg",
+        image: "images/1000031107.jpg",
         bestSeller: true,
         varieties: [
             { name: "Medium 16oz", price:69 },
@@ -258,7 +258,7 @@ const menuList = [
         name: "Cafe Latte",
         price: null,
         category: "coffee",
-        image: "images/100031108.jpg",
+        image: "images/1000031108.jpg",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:69 },
@@ -271,7 +271,7 @@ const menuList = [
         name: "Coffee Jelly Latte",
         price: null,
         category: "coffee",
-        image: "images/100031112.jpg",
+        image: "images/1000031112.jpg",
         bestSeller: false,
         varieties: [
             { name: "Medium 16oz", price:80 },
@@ -284,7 +284,7 @@ const menuList = [
         name: "Choco Lava",
         price:null ,
         category: "milkbase",
-        image: "images/100031109.jpg",
+        image: "images/1000031109.jpg",
         bestSeller: true,
         varieties: [
             { name: "Medium 16oz", price:70 },
