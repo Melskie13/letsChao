@@ -25,11 +25,12 @@ const menuList = [
         ],
         flavors: [],
     },
+   
     {
         name: "Strawberry w/ Oreo Yogurt",
         price: null,
         category: "yogurt",
-        image: "images/yog-swo.jpg",
+        image: "images/StrawberryYogurt.png",
         bestSeller: true,
         varieties: [
             { name: "Medium", price:69 },
@@ -42,7 +43,7 @@ const menuList = [
         name: "Caramel and Graham Yogurt",
         price: null,
         category: "yogurt",
-        image: "images/yog-swo.jpg",
+        image: "images/CaramelYogurt.png",
         bestSeller: false,
         varieties: [
             { name: "Medium", price:69 },
@@ -55,7 +56,7 @@ const menuList = [
         name: "Blueberry w/ Nata Yogurt",
         price: null,
         category: "yogurt",
-        image: "images/yog-swo.jpg",
+        image: "images/BlueberryYogurt.png",
         bestSeller: false,
         varieties: [
             { name: "Medium", price:69 },
