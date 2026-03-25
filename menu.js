@@ -1,3 +1,16 @@
+const categoryOrder = [
+    "friedrice",
+    "platters",
+    "icecream",
+     "yogurt",
+    "coffee",
+    "milkbase",
+    "fruitea",
+   "freshdrink",
+    "snacks"
+];
+
+
 const menuList = [
     {
         name: "Pork Chaofan Egg",
