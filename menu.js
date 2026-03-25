@@ -525,17 +525,6 @@ const menuList = [
         ],
     },
     {
-        name: "Bilao good for 5 pax (Butterfly squid, porkchop, 8 pcs siomai, 6 pcs shanghai, 3pcs egg and 5 cups of Pork Chaofan",
-        price: 520,
-        category: "platters",
-        image: "images/1000031093.jpg",
-        bestSeller: true,
-        varieties: [
-      
-        ],
-        flavors: [],
-    },
-    {
         name: "Chicken Wings",
         price: null,
         category: "platters",
@@ -554,6 +543,18 @@ const menuList = [
             { name: "Garlic Parmesan for every 4pcs", price: 10 }
         ],
     },
+    {
+        name: "Bilao good for 5 pax (Butterfly squid, porkchop, 8 pcs siomai, 6 pcs shanghai, 3pcs egg and 5 cups of Pork Chaofan",
+        price: 520,
+        category: "platters",
+        image: "images/1000031093.jpg",
+        bestSeller: true,
+        varieties: [
+      
+        ],
+        flavors: [],
+    },
+    
     {
         name: "Shanghai",
         price: null,
