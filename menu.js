@@ -3,6 +3,7 @@ const categoryOrder = [
     "platters",
     "icecream",
      "yogurt",
+    "float",
     "coffee",
     "milkbase",
     "fruitea",
