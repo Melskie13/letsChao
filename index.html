@@ -234,8 +234,8 @@ function renderAddOns(addOns) {
     addOns.forEach(add => {
         html += `
         <div class="card shadow-sm">
-            <div class="card-body text-center p-2">
-                <p class="mb-1">${add.name}</p>
+            <div class="card-body text-center p-1">
+                <p class="mb-0">${add.name}</p>
                 <small class="text-success"> ${add.price ? ` +₱${add.price}` : ''}</small>
             </div>
         </div>`;
